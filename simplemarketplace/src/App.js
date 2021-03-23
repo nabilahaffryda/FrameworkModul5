@@ -10,7 +10,6 @@ import loveshot from './assets/loveshot.png';
 import tempo from './assets/tempo.png';
 import thewar from './assets/thewar.png';
 import power from './assets/power.png';
-import { useDispatch, useSelector } from "react-redux";
 
 import {
     BrowserRouter as Router,
@@ -82,7 +81,7 @@ const AuthButton = withRouter(({ history }) =>
         </p>
     ) : (
             <p id="warning-log" >
-                You are not Log in!
+                You are not log in!
             </p>
         )
 );
@@ -113,7 +112,7 @@ function Home() {
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To Our Store!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <div class="masthead-heading text-uppercase">Nice To Meet You</div>
             </div>
         </header>
         </div>
@@ -128,12 +127,12 @@ function Product() {
         <div className="header-2">
             {/* <h2>Data Barang</h2> */}
             <ul>
-                <li className="TopBar-2">
+                <center><li className="TopBar-2">
                     <Link to={`${url}/Albums`}>Albums</Link>
                 </li>
                 <li className="TopBar-2">
                     <Link to={`${url}/Lightstick`}>Lightstick</Link>
-                </li>
+                </li></center> <br></br><br></br><br></br>
             </ul>
 
             <Switch>
@@ -154,52 +153,52 @@ function DataBody() {
     if (dataId === "Albums") {
         return (
             <div className="Albums">
-              <div className="grid-responsive">
-                <div className="row">
-                    <div className="col-sm">
-                        <img src={loveshot} alt="Gambar Thumbnail Artikel" />
-                        <center><h3>EXO The 5th Album Repackage 'LOVE SHOT’</h3><h4>$21.00</h4></center>
+                <div className="grid">
+                    <div className="row">
+                        <div className="col-sm">
+                            <img src={loveshot} alt="Thumbnail" width="10" height="200"/>
+                            <center><h3>EXO ‘LOVE SHOT’</h3><h4>$21.00</h4></center>
+                        </div>
+                        <div className="col-sm">
+                            <img src={exodus} alt="Thumbnail" width="10" height="200"/>
+                            <center><h3>EXO ‘EXODUS’</h3><h4>$33.29</h4></center>
+                        </div>
+                        <div className="col-sm">
+                            <img src={obsession} alt="Thumbnail" width="10" height="200"/>
+                            <center><h3>EXO ‘OBSESSION’</h3><h4>$20.39</h4></center>
+                        </div>
                     </div>
-                    <div className="col-sm">
-                        <img src={exodus} alt="Gambar Thumbnail Artikel" />
-                        <center><h3>EXO The 2nd Album ‘EXODUS’</h3><h4>$33.29</h4></center>
-                    </div>
-                    <div className="col-sm">
-                        <img src={obsession} alt="Gambar Thumbnail Artikel" />
-                        <center><h3>EXO The 6th Album ‘OBSESSION’</h3><h4>$20.39</h4></center>
+                    <div className="row">
+                        <div className="col-sm">
+                            <img src={power} alt="Thumbnail" width="10" height="200"/>
+                            <center><h3>EXO ‘The Power of Music’</h3><h4>$25.99</h4></center>
+                        </div>
+                        <div className="col-sm">
+                            <img src={tempo} alt="Thumbnail" width="10" height="200"/>
+                            <center><h3>EXO ‘DON'T MESS UP MY TEMPO’</h3><h4>$22.98</h4></center>
+                        </div>
+                        <div className="col-sm">
+                            <img src={thewar} alt="Thumbnail" width="10" height="200"/>
+                            <center><h3>EXO ‘THE WAR’</h3><h4>$23.99</h4></center>
+                        </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm">
-                        <img src={power} alt="Gambar Thumbnail Artikel" />
-                        <center><h3>EXO The 4th Album Repackage ‘THE WAR: The Power of Music’</h3><h4>$25.99</h4></center>
-                    </div>
-                    <div className="col-sm">
-                        <img src={tempo} alt="Gambar Thumbnail Artikel" />
-                        <center><h3>EXO The 5th Album 'DON'T MESS UP MY TEMPO'</h3><h4>$22.98</h4></center>
-                    </div>
-                    <div className="col-sm">
-                        <img src={thewar} alt="Gambar Thumbnail Artikel" />
-                        <center><h3>EXO The 4th Album ‘THE WAR’</h3><h4>$23.99</h4></center>
-                    </div>
-                </div>
-            </div>
             </div>
         )
     } else if (dataId === "Lightstick") {
         return (
-          <div className="Lightstick">
-            <div className="row">
+            <div className="Lightstick">
+                <div className="row">
                     <div className="col-sm">
-                        <img src={exolsv1} alt="Gambar Thumbnail Artikel" />
+                        <img src={exolsv1} alt="Thumbnail" />
                         <center><h3>EXO LIGHTSTICK VER 1</h3><h4>$36.50</h4></center>
                     </div>
                     <div className="col-sm">
-                        <img src={exolsv2} alt="Gambar Thumbnail Artikel" />
+                        <img src={exolsv2} alt="Thumbnail" />
                         <center><h3>EXO LIGHTSTICK VER 2</h3><h4>$37.99</h4></center>
                     </div>
                     <div className="col-sm">
-                        <img src={exolsv3} alt="Gambar Thumbnail Artikel" />
+                        <img src={exolsv3} alt="Thumbnail" />
                         <center><h3>EXO LIGHTSTICK VER 3</h3><h4>$55.90</h4></center>
                     </div>
                 </div>

@@ -40,8 +40,9 @@ header.masthead .masthead-subheading {
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 2.7rem;
     font-weight: 700;
+    font-style: italic;
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
@@ -73,6 +74,7 @@ header.masthead .masthead-subheading {
 
 #TB1 {
   margin-left: 25px;
+  
 }
 
 a:any-link {
@@ -131,11 +133,13 @@ a:any-link {
 }
 
 .col-sm {
-  border: 1px solid #212121;
-  width: 20%;
+  border: 1px solid #9d9c9c;
+  width: 21%;
   float: left;
+  align-items: center;
   margin: 0 10px;
   border-radius: 10px;
+  font-size: small;
   padding-top: 25px;
 }
 
@@ -147,6 +151,7 @@ a:any-link {
 
 .col-sm img {
   width: 250px;
+  justify-content: center;
 }
 
 /* Login */
@@ -184,6 +189,7 @@ a:any-link {
 
 .header-2 ul {
   margin-left: 60px;
+
 }
 
 .TopBar-2 {
@@ -195,16 +201,4 @@ a:any-link {
   font-size: 25px;
   font-weight: 500;
   font-style: oblique;
-}
-
-table,
-th,
-td {
-  border: 1px solid #212121;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: 15px;
 }
