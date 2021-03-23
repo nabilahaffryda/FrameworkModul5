@@ -36,9 +36,9 @@ function MarketPlace() {
                     <li className="TopBar-1">
                         <Link className="Link-1" to="/product">Product</Link>
                     </li>
-                    <li className="TopBar-1">
+                    {/* <li className="TopBar-1">
                         <Link className="Link-1" to="/cart">Cart</Link>
-                    </li>
+                    </li> */}
                 </ul>
 
 
@@ -46,7 +46,7 @@ function MarketPlace() {
                     <Route exact path="/home" component={Home} />
                     <Route path="/login" component={Login} />
                     <PrivateRoute path="/product" component={Product} />
-                    <PrivateRoute path="/cart" component={Cart} />
+                    {/* <PrivateRoute path="/cart" component={Cart} /> */}
                 </Switch>
             </div>
         </Router>
@@ -156,29 +156,29 @@ function DataBody() {
                 <div className="grid">
                     <div className="row">
                         <div className="col-sm">
-                            <img src={loveshot} alt="Thumbnail" width="10" height="200"/>
+                            <img src={loveshot} alt="Thumbnail" width="15" height="210"/>
                             <center><h3>EXO ‘LOVE SHOT’</h3><h4>$21.00</h4></center>
                         </div>
                         <div className="col-sm">
-                            <img src={exodus} alt="Thumbnail" width="10" height="200"/>
+                            <img src={exodus} alt="Thumbnail" width="15" height="210"/>
                             <center><h3>EXO ‘EXODUS’</h3><h4>$33.29</h4></center>
                         </div>
                         <div className="col-sm">
-                            <img src={obsession} alt="Thumbnail" width="10" height="200"/>
+                            <img src={obsession} alt="Thumbnail" width="15" height="210"/>
                             <center><h3>EXO ‘OBSESSION’</h3><h4>$20.39</h4></center>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-sm">
-                            <img src={power} alt="Thumbnail" width="10" height="200"/>
+                            <img src={power} alt="Thumbnail"width="15" height="210"/>
                             <center><h3>EXO ‘The Power of Music’</h3><h4>$25.99</h4></center>
                         </div>
                         <div className="col-sm">
-                            <img src={tempo} alt="Thumbnail" width="10" height="200"/>
+                            <img src={tempo} alt="Thumbnail" width="15" height="210"/>
                             <center><h3>EXO ‘DON'T MESS UP MY TEMPO’</h3><h4>$22.98</h4></center>
                         </div>
                         <div className="col-sm">
-                            <img src={thewar} alt="Thumbnail" width="10" height="200"/>
+                            <img src={thewar} alt="Thumbnail" width="15" height="210"/>
                             <center><h3>EXO ‘THE WAR’</h3><h4>$23.99</h4></center>
                         </div>
                     </div>
